@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Header Footer Sample Page</title>
+  <link rel="stylesheet" href="header.css">
+ <!-- Include any additional CSS or meta tags here -->
+
+</head>
+
+<body>
+
+<header>
+   <div class="logo">
+    <h2>Elect-India</h2>
+    <button class="menu-btn">&#9776;</button>
+   </div>
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Elect-India</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">Advertise with us</a></li>
+  </ul>
+</nav>
+</header>
+
+
+
+
+ <!-- MAIN BODY GOES HERE ----   Make sure not to overlap any header footer classes and styles-->
+
+
+
+
+
+
+
+  <!-- MAIN BODY ENDS HERE ----   Make sure not to overlap any header footer classes and styles-->
+
+
+<footer>
+  <p>&copy; Elect-India 2024</p>
+</footer>
+
+<script>
+    document.querySelector('.menu-btn').addEventListener('click', function () {
+      document.querySelector('nav').classList.toggle('active');
+    });
+    document.querySelectorAll('nav ul li a').forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelector('nav').classList.remove('active');
+      });
+    });
+
+</script>
+</body>
+</html>
